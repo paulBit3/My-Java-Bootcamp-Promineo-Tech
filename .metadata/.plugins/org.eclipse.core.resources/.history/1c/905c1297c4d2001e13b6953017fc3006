@@ -1,0 +1,10 @@
+package week2_Lab;
+
+public class ConditionalLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package Week1_projects;
+
+import java.util.Scanner;
+
+public class AreaOfRectangle {
+	
+	//method
+	static void RectangleArea (double w, double h) {
+        // WRITE YOUR CODE HERE 
+        double area = w * h;
+        
+        //printing result
+   	 	System.out.println(area);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		//user interaction
+		Scanner in = new Scanner(System.in);
+		double w, h;
+				
+		//getting user input
+		w = in.nextDouble();
+		h = in.nextDouble();
+		
+		//calling method
+		RectangleArea(w,h);
+		
+
+	}
+
+}

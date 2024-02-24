@@ -1,0 +1,10 @@
+package Week1_project;
+
+public class CircleOfArea {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
