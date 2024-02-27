@@ -1,5 +1,8 @@
 package week3_projects.projects1;
 
+import java.io.*;
+import java.util.*;
+
 public class MethodsApp {
 	/*
 	 * 

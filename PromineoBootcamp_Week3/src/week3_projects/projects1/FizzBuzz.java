@@ -1,5 +1,9 @@
 package week3_projects.projects1;
 
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
 public class FizzBuzz {
 	/*
 	 * method called fizzBuzz that accepts the integer value stored in num1.
