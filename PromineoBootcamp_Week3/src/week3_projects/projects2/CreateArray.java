@@ -14,6 +14,7 @@ public class CreateArray {
 	
 	//method
 	static int[] createArray(int a, int b, int c, int d, int e) {
+		//declaring int array
 		int [] myArray = new int[6];
 		myArray[0] = a;
 		myArray[1] = b;

@@ -150,10 +150,10 @@ public class ConditionalLoop {
 		//				i. "login successful" if the username is "Tommy123" and the password is "12345"
 		//				ii. "access denied" otherwise
 		System.out.println("\nQuestion 9:");
-		String username = "Tommy123";
+		String username = "Paul123";
 		String password = "12345";
 		
-		if (username.equals("Tommy123") && password.equals("12345")) {
+		if (username.equals("Paul123") && password.equals("12345")) {
 			System.out.println("login successful");
 		} else {
 			System.out.println("access denied");

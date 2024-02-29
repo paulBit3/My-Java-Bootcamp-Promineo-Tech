@@ -14,6 +14,7 @@ public class SumOfDigit {
 	static int sumOfDigit(int digits) {
 		
 		String myDigit = "";
+		//returning a string
 		myDigit = Integer.toString(digits);
 		
 		int sum = 0;
