@@ -23,7 +23,7 @@ public class NumberBetweenOneToHundred {
 	    int userNumber = in.nextInt();
 
 	    do {
-	    	
+	    	//checking if numbers are between 1 and 100
 	    	if(!(userNumber >= 1 && userNumber <= 100)) {
 	    		System.out.println("Your number was not between 1 and 100.");
 				break;

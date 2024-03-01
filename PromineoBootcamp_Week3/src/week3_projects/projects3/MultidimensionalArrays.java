@@ -26,17 +26,50 @@ public class MultidimensionalArrays {
 	
 	//our static method
 	static void myMultiDimension(int a, int b) {
-		//new array arr
-		int[] arr = {a, b};
-		//length of arr
-		int len1 = arr.length;
 		
-		//looping
-		for(int i = 0; i < len1; i++) {}
+		//checking for error
+		if ((a <= 2) || (b <= 2)) {
+			//printing to user
+			System.out.println("Both numbers need to be greater than 2.");
+		} else {
+			//creating our multidimensional array
+			//a is a row and b is a column
+			int[][] arr = new int[a][b];
+			int i, j;
+
+			int val = 1;
+			//looping through our multidimensional array
+			for(i = 0; i < a; i++) {
+				for(j = 0; j < b; j++) {
+					//populating the multidimensional array with i*j
+					//arr[i][j] = (i +1) * (j +1 );
+					//or we can do
+					arr[i][j] = j;
+					//printing element
+					System.out.println("arr element[" + i +"][" + j +"] = " + arr[0][arr[0].length -1]);
+					
+				}
+			}
+			
+		}
+		
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Test
+		
+		//user interaction
+		Scanner sc = new Scanner(System.in);
+		
+		int a, b;
+		
+		//user input
+		System.out.println("Enter your number: ");
+		a = sc.nextInt();
+		b = sc.nextInt();
+		
+		//calling our method
+		myMultiDimension(a,b);
 
 	}
 
