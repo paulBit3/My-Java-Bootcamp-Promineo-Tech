@@ -17,6 +17,7 @@ public class ArrayOfInteger {
 	static int createInt (int num1, int num2, int num3, int num4, int num7, int num6) {
 		//array of int
 		int[] arrayInt = new int[5];
+
 		//length of arrayInt
 		int len = arrayInt.length;
 		//new table to keep element of arrayInt

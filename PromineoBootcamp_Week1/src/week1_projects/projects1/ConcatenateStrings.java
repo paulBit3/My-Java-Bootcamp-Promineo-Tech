@@ -10,23 +10,29 @@ public class ConcatenateStrings {
 	   Write an equation that will concatenate the two Strings and assign the value to fullName.
 	   Make sure you add a space between firstName and lastName in your equation (ex. "John Doe").
 	 */
+	
+	//method
+	public static String createfullName(String firstName, String lastName) {
+		return "" + firstName + " " + lastName + "";
+	}
 
 	public static void main(String[] args) {
 		
 		// User interaction
-		Scanner in = new Scanner(System.in);
+		//Scanner in = new Scanner(System.in);
 		
 		//getting user input
-		String firstName = in.nextLine();
-		String lastName = in.nextLine();
+		String firstName = "Paul";
+		String lastName = "Brou";
 		/***** DO NOT CHANGE THE CODE ABOVE THIS LINE *****/
 		
-		String fullName = firstName + " " + lastName;
+		//String fullName = firstName + " " + lastName;
+		
 		
 	
 	    
 	    /***** printing full name *****/
-		System.out.println(fullName);
+		System.out.println(createfullName(firstName, lastName));
 
 	}
 
