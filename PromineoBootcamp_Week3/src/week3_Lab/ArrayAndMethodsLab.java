@@ -96,6 +96,7 @@ public class ArrayAndMethodsLab {
 		//calling our method
 		greetings(name);
 		
+		
 		String greet = greetMe(name);
 		System.out.println(greet);
 		

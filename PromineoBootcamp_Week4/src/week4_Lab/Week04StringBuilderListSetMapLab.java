@@ -193,6 +193,8 @@ public class Week04StringBuilderListSetMapLab {
 		System.out.println(mp); //this will print {A=3, S=1, M=1}
 
 		}
+	
+	
 			
 			
 		// Method 15: Write a method that takes a List<String> 
@@ -224,7 +226,7 @@ public class Week04StringBuilderListSetMapLab {
 			//creating a map object
 			Map<String, String> mp = new HashMap<String, String>();
 			//traversing a map
-			//Converting to Set so that we can traverse
+			//Converting to Set so that we can traverse the map
 			//Set set = map.keySet();
 			//looping
 			for(String key : map.keySet()) {
