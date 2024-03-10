@@ -40,6 +40,8 @@ public class RepeatWord {
 		//getting user input
 		System.out.println("Type a word: ");
 		userWord = in.nextLine();
+		
+		System.out.println("Enter a number: ");
 		numTimes = in.nextInt();
 		
 		System.out.println(repeatWord(userWord,numTimes));
