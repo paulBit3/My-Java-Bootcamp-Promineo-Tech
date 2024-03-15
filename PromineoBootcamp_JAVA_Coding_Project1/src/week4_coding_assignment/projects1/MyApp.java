@@ -540,7 +540,7 @@ public class MyApp {
 	 * Here is the program my method will handle
 	 * 
 	 * Write a program that takes a list of shopping product and their price.
-	 * Create a new list called shoppingList that add a new product and remove old product.
+	 * Create a new list called shoppingList that add a new product.
 	 * Add product and the product price to shoppingList
 	 * Print product in shoppingList
 	 */

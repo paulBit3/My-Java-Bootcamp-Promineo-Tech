@@ -191,10 +191,23 @@ public class Week04StringBuilderListSetMapLab {
 		// 15. Testing our method
 		Map<Character, Integer> mp = listToMapLetterCount(myTest2);
 		System.out.println(mp); //this will print {A=3, S=1, M=1}
+		
+		
+		
+		
+		 System.out.println("original List has " + myList.size() + " " + halfTheList(myList)) ;
+		    
 
 		}
 	
+	   
 	
+	
+	
+	
+	/*
+	 * M E T H O D S *//*
+	 */
 			
 			
 		// Method 15: Write a method that takes a List<String> 
@@ -276,6 +289,8 @@ public class Week04StringBuilderListSetMapLab {
 			}
 			return hs;
 		}
+		
+		
 		
 		//or this method also works as well
 		public static List<String> convertSetToList(Set<String> word){
@@ -467,5 +482,58 @@ public class Week04StringBuilderListSetMapLab {
 			//return value
 			return shortest;
 		}
+		
+		
+		/*
+		 * method that takes a List of String and returns a new List of String 
+		 * containing every other element in the original List.
+		 *  The  returned List should be half the size of the original List. 
+		 *  If the original List has an odd number of elements, the returned 
+		 *  List should have half the amount of elements rounded 
+		 *  down (i.e. original List has 5, returned List has 2).
+		 */
+		
+		public static List<String> halfTheList(List<String> listOfNames){
+			
+			//creating a set object
+			List<String> resultList = new ArrayList<>();
+			
+			//looping
+			for(int i = 0; i < listOfNames.size(); i++) {
+				if(!(i % 2 == 0)) {
+					resultList.add(listOfNames.get(i));
+				}
+			}
+			return resultList;
+		}
+		
+		
+		
+		/*
+		 * 
+		 * This method will take a parameter of type Map < String, String>, 
+		 * and will return a List of String that contains every value 
+		 * of the map where the key starts with 'A'  or 'a'.
+		 */
+		
+		
+		private static List< String > returnValuesForKeysStartingWithA( Map < String, String > dictionary) {
+
+			List< String > resultList = new ArrayList<>();
+
+			Set< String > keySet = dictionary.keySet() ;
+
+			for ( String key : keySet ) {
+
+			if ( key.toLowerCase().charAt(0) == 'a' ) {
+				resultList.add(dictionary.get( key ));
+
+			}
+
+			}
+
+			return resultList;
+
+			}
 
 }
