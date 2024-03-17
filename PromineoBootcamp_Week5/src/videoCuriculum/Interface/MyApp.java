@@ -1,6 +1,6 @@
 package videoCuriculum.Interface;
 
-public class App {
+public class MyApp {
 	
 	//let have a field
 	static LogInterface log;
@@ -8,7 +8,7 @@ public class App {
 	public static void main(String[] args) {
 		// Testing
 		
-		//creating a use console instance
+		//creating a user console instance
 		LogInterface log = new LogConsole();
 		
 		LogInterface file = new FileLog();
