@@ -6412,3 +6412,42 @@ java.lang.IllegalStateException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2024-05-22 12:55:16.922
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2024-05-22 13:35:15.790
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-22 13:35:15.790
+!MESSAGE A conflict occurred for F7:
+Binding(F7,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.StepReturn,Step Return,
+		Step return,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.debug.ui.commands.StepReturn"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(F7,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.grid.togglePreview,Toggle result panels,
+		Toggle extra result panels,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		WorkbenchHandlerServiceHandler("org.jkiss.dbeaver.core.resultset.grid.togglePreview"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.jkiss.dbeaver.ui.context.resultset,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-22 13:35:15.790
+!MESSAGE A conflict occurred for CTRL+F2:
+Binding(CTRL+F2,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.Terminate,Terminate,
+		Terminate,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.debug.ui.commands.Terminate"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+F2,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.ui.editors.sql.rename,Rename SQL Script,
+		Rename current SQL script,
+		Category(org.jkiss.dbeaver.core.sql,SQL Editor,SQL Editor Commands,true),
+		WorkbenchHandlerServiceHandler("org.jkiss.dbeaver.ui.editors.sql.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.jkiss.dbeaver.ui.editors.sql.script,,,system)
